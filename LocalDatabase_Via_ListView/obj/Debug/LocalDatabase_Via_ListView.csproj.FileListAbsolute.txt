@@ -1,0 +1,12 @@
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\bin\Debug\LocalDatabase_Via_ListView.exe.config
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\bin\Debug\LocalDatabase_Via_ListView.exe
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\bin\Debug\LocalDatabase_Via_ListView.pdb
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.csproj.AssemblyReference.cache
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.csproj.SuggestedBindingRedirects.cache
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.Form1.resources
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.Properties.Resources.resources
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.csproj.GenerateResource.cache
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.csproj.CoreCompileInputs.cache
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.exe
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.pdb
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.Form2.resources
