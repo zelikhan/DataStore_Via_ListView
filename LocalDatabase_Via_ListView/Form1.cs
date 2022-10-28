@@ -9,8 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Schema;
+using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ListView = System.Windows.Forms.ListView;
+using System.Data.SqlClient;
 
 namespace LocalDatabase_Via_ListView
 {
@@ -69,33 +71,83 @@ namespace LocalDatabase_Via_ListView
         private void save_btn_Click(object sender, EventArgs e)
         {
             
-            String gender = "";
+            String gend = "";
             if(radioButton1.Checked)
             {
-                gender = "Male";
+                gend = "Male";
             }
             else
             {
-                gender = "Female";
+                gend = "Female";
             }
             ListViewItem list = new ListViewItem(f_name.Text + " " + l_name.Text);
             list.SubItems.Add(c_no.Text);
-            list.SubItems.Add(gender);
-            list.SubItems.Add(address.Text);
+            list.SubItems.Add(gend);
+            list.SubItems.Add(add.Text);
             list.SubItems.Add(w_no.Text);
             list.SubItems.Add(w_name.Text);
             list_view.Items.Add(list);
-            f_name.Text = "";
+            f_name.Text ="";
             l_name.Text = "";
-            address.Text = "";
+            add.Text = "";
             c_no.Text = "";
             w_no.Text = "";
             w_name.Text = "";
-            MessageBox.Show("Record Saved Succesfully");
+            MessageBox.Show("Record Saved Succesfully");    
 
 
 
 
+        }
+
+        private void add_btn_Click(object sender, EventArgs e)
+        {
+            string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\Database1.mdf"";Integrated Security=True";
+            SqlConnection con = new SqlConnection(connection);
+            con.Open();
+
+            string f_nm = f_name.Text;
+            string l_nm = l_name.Text;
+            string contact = c_no.Text;
+            string address = add.Text;
+            string w_number = w_no.Text;
+            string w_na = w_name.Text;
+
+            string query = "Insert into data Values ( '" + f_nm + "','" + l_nm + "','" + contact + "','" + address + "' , '" + w_number + "','" + w_na + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            int i = cmd.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Data Saved");
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            foreach(ListViewItem itm in list_view.Items)
+            {
+                string warehouse_no= itm.SubItems[4].Text.ToString();
+                if(w_no.Text==warehouse_no)
+                {
+                    itm.SubItems[0].Text = f_name.Text ;
+                    itm.SubItems[1].Text=l_name.Text ;
+                    itm.SubItems[2].Text=c_no.Text ;
+                    itm.SubItems[3].Text = add.Text;
+                    itm.SubItems[4].Text = w_no.Text;
+                    itm.SubItems[5].Text = w_name.Text;
+                    f_name.Text = "";
+                    l_name.Text = "";
+                    add.Text = "";
+                    c_no.Text = "";
+                    w_no.Text = "";
+                    w_name.Text = "";
+                    MessageBox.Show("Data Updated"); 
+
+                }
+                
+            }
+            
         }
     }
 }

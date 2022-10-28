@@ -10,3 +10,5 @@ D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView
 D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.exe
 D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.pdb
 D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\obj\Debug\LocalDatabase_Via_ListView.Form2.resources
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\bin\Debug\Database1.mdf
+D:\University Work\Visual Porgramming\Lab Tasks\LAB 6\LocalDatabase_Via_ListView\LocalDatabase_Via_ListView\bin\Debug\Database1_log.ldf

@@ -35,7 +35,7 @@
             this.f_name = new System.Windows.Forms.TextBox();
             this.l_name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.address = new System.Windows.Forms.TextBox();
+            this.add = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.w_no = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(218, 9);
+            this.label1.Location = new System.Drawing.Point(220, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(468, 46);
             this.label1.TabIndex = 1;
@@ -117,14 +117,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name ";
             // 
-            // address
+            // add
             // 
-            this.address.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address.Location = new System.Drawing.Point(535, 21);
-            this.address.Multiline = true;
-            this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(195, 82);
-            this.address.TabIndex = 7;
+            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Location = new System.Drawing.Point(535, 21);
+            this.add.Multiline = true;
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(195, 82);
+            this.add.TabIndex = 7;
             // 
             // label4
             // 
@@ -244,7 +244,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.w_no);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.address);
+            this.panel1.Controls.Add(this.add);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.l_name);
             this.panel1.Controls.Add(this.label3);
@@ -292,6 +292,7 @@
             this.add_btn.TabIndex = 20;
             this.add_btn.Text = "Add to Database";
             this.add_btn.UseVisualStyleBackColor = false;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // update_btn
             // 
@@ -304,6 +305,7 @@
             this.update_btn.TabIndex = 21;
             this.update_btn.Text = "Update Data";
             this.update_btn.UseVisualStyleBackColor = false;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // pictureBox2
             // 
@@ -350,7 +352,7 @@
         private System.Windows.Forms.TextBox f_name;
         private System.Windows.Forms.TextBox l_name;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox address;
+        private System.Windows.Forms.TextBox add;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox w_no;
         private System.Windows.Forms.Label label5;
